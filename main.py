@@ -1,5 +1,6 @@
 from telegram import Update, ReplyKeyboardRemove
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
+import os
 
 # Replace with your actual Bot Token
 TOKEN = os.environ.get("TOKEN") 
