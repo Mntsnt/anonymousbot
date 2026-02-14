@@ -2,9 +2,9 @@ from telegram import Update, ReplyKeyboardRemove
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
 # Replace with your actual Bot Token
-TOKEN = '8534212861:AAGG1PChZALIUtg4nMd7g8rge3l0CVEThk8'
+TOKEN = os.environ.get("TOKEN") 
 # Replace with your Group ID or your own User ID to receive the questions
-ADMIN_GROUP_ID = -5154840561
+ADMIN_GROUP_ID = os.environ.get("ADMIN_GROUP_ID") 
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
